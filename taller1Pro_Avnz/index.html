@@ -7,13 +7,15 @@
   </head>
   <body>
     <button type="button">Player</button>
+    <!--promt doesnt work on showpreview-->
+
     <script>
       const button = document.querySelector("button");
       button.addEventListener("click", updateName);
 
       function updateName() {
         const name =prompt("Ingrese su nombre");
-        button.textContent = `Player${name}`;
+        button.textContent = `Player ${name}`;
       }
     </script>
   </body>
