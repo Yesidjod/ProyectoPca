@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ejercicio con JV</title>
+    <link rel="stylesheet" href="abcd.css" />
+  </head>
+  <body>
+    <button type="button">Player</button>
+    <script>
+      const button = document.querySelector("Button");
+      button.addEventListener("click", updateName);
+
+      function updateName() {
+        const name = prompt("Ingrese nombre");
+        button.textContent = "player + ${name}";
+      }
+    </script>
+  </body>
+</html>
