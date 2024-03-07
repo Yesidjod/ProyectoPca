@@ -2,17 +2,18 @@
 <html>
   <head>
     <title>Ejercicio con JV</title>
+    <meta charset="utf-8">
     <link rel="stylesheet" href="abcd.css" />
   </head>
   <body>
     <button type="button">Player</button>
     <script>
-      const button = document.querySelector("Button");
+      const button = document.querySelector("button");
       button.addEventListener("click", updateName);
 
       function updateName() {
-        const name = prompt("Ingrese nombre");
-        button.textContent = "player + ${name}";
+        const name =prompt("Ingrese su nombre");
+        button.textContent = `Player${name}`;
       }
     </script>
   </body>
