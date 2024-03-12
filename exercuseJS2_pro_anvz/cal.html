@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+ <title>Calculadora</title>       
+    </head>
+
+    <body>
+        <h1>Calculadora</h1>
+<div>
+    <h2>Operaciones con 2 numeros</h2>
+    
+<button type="button" id="button">Suma</button>
+    
+
+    
+
+ <script>
+
+    const button = document.querySelector("button");
+      button.addEventListener("click", sumaNumero);
+
+      function sumaNumero(){
+        var num1= Number(prompt("Ingrese numero1 para sumar"));
+        var num2= Number(prompt("Ingrese numero2 para sumar"));
+        var suma= num1+num2;
+        window.prompt=` ${suma}`;
+      }
+ </script>
+</div>
+        
+        
+    </body>
+</html>
